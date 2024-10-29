@@ -1,0 +1,8 @@
+.pult__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pult__block p {
+  max-width: 50%;
+}

@@ -1,0 +1,38 @@
+.stepper__container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  gap: 8px;
+}
+
+.circle {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dc143c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.vertical {
+  width: 50px;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  height: 200px;
+  width: 4px;
+  background-color: rgb(128 128 128 / 50%);
+  border-radius: 2px;
+}
