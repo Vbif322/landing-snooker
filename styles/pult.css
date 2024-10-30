@@ -1,8 +1,30 @@
 .pult__block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
 }
 
-.pult__block p {
+.pult__block:nth-child(even) {
+  align-items: flex-end;
+}
+
+.pult__block img {
+  width: 200px;
+  height: 200px;
+}
+
+.pult__block img {
+  width: 200px;
+  height: 200px;
+}
+
+.pult__block__container {
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pult__control p {
+  margin: 8px 0;
 }
