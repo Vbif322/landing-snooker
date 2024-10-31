@@ -2,10 +2,12 @@
   display: flex;
   gap: 8px;
   justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
 }
 
 .img {
-  width: 150px;
+  min-width: 150px;
   height: 150px;
   background: #f6f6f6;
 }

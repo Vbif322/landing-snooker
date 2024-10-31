@@ -8,8 +8,21 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
+        <nav class="menu">
+          <ul>
+            <li><a href="#main">Основная информация</a></li>
+            <li><a href="#connect">Подключение</a></li>
+            <li><a href="#pult">Пульт управления</a></li>
+            <li><a href="#mode">Режим игры</a></li>
+            <li><a href="#network">Сетевые функции</a></li>
+            <li><a href="#download">Скачивание</a></li>
+            <li><a href="#examples">Примеры использования</a></li>
+          </ul>
+        </nav>
+      </header>
       <main>
-        <section class="section">
+        <section class="section" id="main">
           <h1>
             Табло для ведения счета в различных дисциплинах и вариантах игры в
             Снукер. В том числе для режимов с лимитами времени на удар, фрейм
@@ -103,7 +116,7 @@
             <img src="assets/OBS.png" class="obs" alt="obs" />
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="connect">
           <h2>Подключение</h2>
           <div class="stepper__container">
             <div class="circle">1</div>
@@ -120,7 +133,7 @@
           </div>
           <h3>Управляется с пульта</h3>
         </section>
-        <section class="section">
+        <section class="section" id="pult">
           <h2>Пульт управления</h2>
           <div class="pult__container">
             <div class="pult__block">
@@ -160,17 +173,67 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="mode">
           <h2>Режим игры</h2>
           <div class="mode">
             <div>
               <p>Классический снукер</p>
-              <img src="" alt="mode-snooker" />
+              <img src="/assets/mode-snooker.jpg" alt="mode-snooker" />
+              <p>1- счет по фреймам</p>
+              <p>2- текущий брейк</p>
+              <p>3 - счет в партии</p>
+              <p>4 - таймер удара</p>
+            </div>
+            <div>
+              <p>Шут-Аут</p>
+              <img src="/assets/mode-shoot-out.jpg" alt="mode-shoot-out" />
+              <p>1- счет по фреймам</p>
+              <p>2- текущий брейк</p>
+              <p>3 - счет в партии</p>
+              <p>4 - таймер удара</p>
+            </div>
+            <div>
+              <p>Снукер-900</p>
+              <img src="/assets/mode-snooker-900.jpg" alt="mode-snooker-900" />
+              <p>1- счет по фреймам</p>
+              <p>2- текущий брейк</p>
+              <p>3 - счет в партии</p>
+              <p>4 - таймер удара</p>
+            </div>
+            <div class="mode-function__container">
+              <p>Функциональный режим</p>
+              <img src="/assets/mode-function.jpg" alt="mode-function" />
+              <p>
+                <b>FT</b> - Короткое нажатие включает ФУНКЦИОНАЛЬНЫЙ РЕЖИМ. Это
+                для счета по фреймам, звук вкл/выкл и тп.
+              </p>
+              <p>И справа, и слева будут гореть стрелки</p>
+              <p>
+                В этом режиме табло примет только одну команду, и вернется в
+                игровой режим
+              </p>
+              <h3>Команды:</h3>
+              <p>2 - добавить счет по фреймам слева</p>
+              <p>3 - добавить счет по фреймам справа</p>
+              <p>ST- вкл/выкл автоматического включения таймера удара</p>
+              <p>
+                Если вы случайно вошли в Функциональный режим, просто нажмите
+                ESC
+              </p>
             </div>
           </div>
         </section>
+        <section class="section" id="network">
+          <h2>Сетевые функции</h2>
+        </section>
+        <section class="section" id="download">
+          <h2>Скачивание</h2>
+        </section>
+        <section class="section" id="examples">
+          <h2>Примеры использования</h2>
+        </section>
       </main>
-      <footer>
+      <footer class="footer">
         <h6 class="contacts__title">Контакты</h6>
         <div class="contacts">
           <p>snooker@yandex.ru</p>
@@ -179,5 +242,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
