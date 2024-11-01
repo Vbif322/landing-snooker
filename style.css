@@ -1,3 +1,5 @@
+/* Импортируем стили из папки styles */
+
 @import "styles/footer.css";
 @import "styles/gallery.css";
 @import "styles/connect.css";
@@ -100,6 +102,27 @@ main {
   transition: all 0.2s;
   cursor: default;
 }
+
+/* Оставил цвета, если захотите раскрасить карточки */
+
+/* .card:nth-child(1) {
+  background: #ff7d7d;
+}
+.card:nth-child(2) {
+  background: #fff387;
+}
+.card:nth-child(3) {
+  background: #67b563;
+}
+.card:nth-child(4) {
+  background: #c17823;
+}
+.card:nth-child(5) {
+  background: #6186ff;
+}
+.card:nth-child(6) {
+  background: #ff8ad4;
+} */
 
 .card:hover {
   transform: translateY(-8px);
