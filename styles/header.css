@@ -1,8 +1,6 @@
 .header {
-  background-color: #d1d6ff;
-  margin-bottom: 24px;
-  padding: 32px;
-  border-radius: 16px;
+  height: 72px;
+  border-bottom: 1px solid black;
 }
 
 .menu ul {

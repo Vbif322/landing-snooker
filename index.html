@@ -1,247 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Табло для снукера</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="menu">
-          <ul>
-            <li><a href="#main">Основная информация</a></li>
-            <li><a href="#connect">Подключение</a></li>
-            <li><a href="#pult">Пульт управления</a></li>
-            <li><a href="#mode">Режим игры</a></li>
-            <li><a href="#network">Сетевые функции</a></li>
-            <li><a href="#download">Скачивание</a></li>
-            <li><a href="#examples">Примеры использования</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="section" id="main">
-          <h1>
-            Табло для ведения счета в различных дисциплинах и вариантах игры в
-            Снукер. В том числе для режимов с лимитами времени на удар, фрейм
-            или матч
-          </h1>
-          <div class="img__container">
-            <img src="assets/panel.jpg" class="panel" alt="panel" />
-            <img src="assets/pult1.jpg" class="pult" alt="pult" />
-          </div>
 
-          <div class="card__container">
-            <div class="card">
-              <p>
-                Показываются счет в партии, текущий брейк, время на партию и
-                время на удар
-              </p>
-            </div>
-            <div class="card">
-              <p>
-                За три секунды до окончания времени на удар табло издает
-                высокие, хорошо слышимые игрокам, звуки
-              </p>
-            </div>
-            <div class="card">
-              <p>
-                При окончании времени на матч табло свистит в стиле окончания
-                футбольного матча
-              </p>
-            </div>
-            <div class="card">
-              <p>Управляется с пульта с интуитивно понятным интерфейсом</p>
-            </div>
-            <div class="card">
-              <p>
-                Табло очень надёжно и сохраняет счет во время сбоя питания. У
-                игроков не будет сомнений, какой именно сейчас счет
-              </p>
-            </div>
-            <div class="card">
-              <p>
-                Очень легкое! Без проблем можно повесить табло над столом. Для
-                крепления на стену предусмотрены отверстия в задней крышке
-              </p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Табло для снукера</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="#main">Основная информация</a></li>
+          <li><a href="#connect">Подключение</a></li>
+          <li><a href="#pult">Пульт управления</a></li>
+          <li><a href="#mode">Режим игры</a></li>
+          <li><a href="#network">Сетевые функции</a></li>
+          <li><a href="#download">Скачивание</a></li>
+          <li><a href="#examples">Примеры использования</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main>
+    <section class="section">
+      <div class="wrapper">
+        <div class="gallery">
+          <div class="img">
+            <img src="/assets/pult1.jpg" alt="type" />
+            <span class="img__text">text</span>
           </div>
-        </section>
-        <section class="section">
-          <div class="gallery">
-            <div class="img">Заглушка под картинку</div>
-            <div class="img">Заглушка под картинку</div>
-            <div class="img">Заглушка под картинку</div>
-            <div class="img">Заглушка под картинку</div>
-            <div class="img">Заглушка под картинку</div>
-            <div class="img">Заглушка под картинку</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="main">
+      <div class="wrapper">
+        <h1>
+          Табло для ведения счета в различных дисциплинах и вариантах игры в
+          Снукер. В том числе для режимов с лимитами времени на удар, фрейм
+          или матч
+        </h1>
+        <div class="main__slides__container">
+          <div class="main__slide">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" stroke="#5f6368"
+              fill="none" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <text x="8" y="16" style="font: bold 6px">?</text>
+            </svg>
+            <p>Честная цена от производителя</p>
           </div>
-        </section>
-        <section class="section">
-          <h2>
+          <div class="main__slide">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" stroke="#5f6368"
+              fill="none" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <text x="8" y="16" style="font: bold 6px">?</text>
+            </svg>
+            <p>Без наценки за бренд</p>
+          </div>
+        </div>
+        <div class="img__container">
+          <div><img src="assets/panel.jpg" class="main__img" alt="panel" />
+            <p>caseguru L</p>
+          </div>
+          <div><img src="assets/pult1.jpg" class="main__img" alt="pult" />
+            <p>caseguru L</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="section banner__background">
+      <div class="wrapper banner__container">
+        <div class="banner__title">
+          <h3>Доставка</h3>
+          <p>от 180 руб</p>
+        </div>
+        <div class="banner__features__container">
+          <div class="banner__feature">
+            <h3>Оплата на сайте</h3>
+            <p>Jgkfnf yf cfqnt</p>
+          </div>
+          <div class="banner__feature">
+            <h3>Оплата на сайте</h3>
+            <p>Доступная цена</p>
+          </div>
+          <div class="banner__feature">
+            <h3>Оплата на сайте</h3>
+            <p>Гарантия</p>
+          </div>
+          <div class="banner__feature">
+            <h3>Оплата на сайте</h3>
+            <p>Техническая поддержка</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>
+        Любой пульт может быть привязан к конкретному табло, что позволяет
+        работать с несколькими табло в одном зале
+      </h2>
+      <div class="card__container">
+        <div class="card">
+          <p>
+            Устройство работает от внешнего блока питания 12 вольт и абсолютно
+            безопасно
+          </p>
+        </div>
+        <div class="card">Картинка БП</div>
+        <div class="card">
+          <p>
+            Табло можно подключать к своей WiFi сети, и устанавливать имена
+            игроков, лимиты игры и настройки сети через веб-интерфейс
+          </p>
+        </div>
+        <div class="card" style="grid-column: 1 / 3">
+          <p>
+            При обращении к табло по его IP адресу из, например, программы для
+            трансляции OBS Studio, вы сможете добавить на экран плашку с
+            актуальным счетом. Смотрите раздел “сетевые функции”
+          </p>
+        </div>
+        <div class="card">
+          <p>
             Любой пульт может быть привязан к конкретному табло, что позволяет
             работать с несколькими табло в одном зале
-          </h2>
-          <div class="card__container">
-            <div class="card">
-              <p>
-                Устройство работает от внешнего блока питания 12 вольт и
-                абсолютно безопасно
-              </p>
-            </div>
-            <div class="card">Картинка БП</div>
-            <div class="card">
-              <p>
-                Табло можно подключать к своей WiFi сети, и устанавливать имена
-                игроков, лимиты игры и настройки сети через веб-интерфейс
-              </p>
-            </div>
-            <div class="card" style="grid-column: 1 / 3">
-              <p>
-                При обращении к табло по его IP адресу из, например, программы
-                для трансляции OBS Studio, вы сможете добавить на экран плашку с
-                актуальным счетом. Смотрите раздел “сетевые функции”
-              </p>
-            </div>
-            <div class="card">
-              <p>
-                Любой пульт может быть привязан к конкретному табло, что
-                позволяет работать с несколькими табло в одном зале
-              </p>
-            </div>
-          </div>
-          <div class="img__container">
-            <img src="assets/OBS.png" class="obs" alt="obs" />
-          </div>
-        </section>
-        <section class="section" id="connect">
-          <h2>Подключение</h2>
-          <div class="stepper__container">
-            <div class="circle">1</div>
-            <p>Найдите разъем питания с задней стороны</p>
-            <div class="vertical"><div class="line"></div></div>
-            <div class="circle">2</div>
-            <p>
-              Вставьте в разъем штекер блока питания ( в комплекте ), а сам блок
-              питания включите в розетку 128-220 вольт
-            </p>
-            <div class="vertical"><div class="line"></div></div>
-            <div class="circle">3</div>
-            <p>Табло включится и готово к работе</p>
-          </div>
-          <h3>Управляется с пульта</h3>
-        </section>
-        <section class="section" id="pult">
-          <h2>Пульт управления</h2>
-          <div class="pult__container">
-            <div class="pult__block">
-              <div class="pult__block__container">
-                <p>
-                  Ваш пульт управления уже привязан именно к вашему табло и не
-                  повлияет на работу других табло нашего производства
-                </p>
-                <img src="assets/pult1.jpg" alt="pult" />
-              </div>
-            </div>
-            <div class="pult__block">
-              <div class="pult__block__container">
-                <img src="assets/pult2.jpg" alt="pult" />
-                <p>
-                  Однако, если вы потеряете пульт, или он придёт в негодность,
-                  вы всегда можете написать нам в поддержку, и мы пришлем вам
-                  другой пульт
-                </p>
-              </div>
-            </div>
-            <div class="pult__block">
-              <div class="pult__block__container">
-                <img src="assets/pult3.jpg" alt="pult" />
-                <p>Цифровые кнопки добавляют очки активному игроку</p>
-              </div>
-            </div>
-            <div class="pult__control">
-              <p><b>ESC</b> - Короткое - отменит последнюю команду.</p>
-              <p><b>Длинное</b> нажатие обнулит табло</p>
-              <p><b>ST</b> - включение таймера на удар</p>
-              <p><b>><</b>- переход хода</p>
-              <p>
-                <b>FT - Длинное нажатие</b> переключает по кругу режимы табло (
-                классика, Шутаут, 900 )
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="mode">
-          <h2>Режим игры</h2>
-          <div class="mode">
-            <div>
-              <p>Классический снукер</p>
-              <img src="/assets/mode_snooker.jpg" alt="mode-snooker" />
-              <p>1- счет по фреймам</p>
-              <p>2- текущий брейк</p>
-              <p>3 - счет в партии</p>
-              <p>4 - таймер удара</p>
-            </div>
-            <div>
-              <p>Шут-Аут</p>
-              <img src="/assets/mode_shoot_out.jpg" alt="mode-shoot-out" />
-              <p>1- счет по фреймам</p>
-              <p>2- текущий брейк</p>
-              <p>3 - счет в партии</p>
-              <p>4 - таймер удара</p>
-            </div>
-            <div>
-              <p>Снукер-900</p>
-              <img src="/assets/mode_snooker_900.jpg" alt="mode-snooker-900" />
-              <p>1- счет по фреймам</p>
-              <p>2- текущий брейк</p>
-              <p>3 - счет в партии</p>
-              <p>4 - таймер удара</p>
-            </div>
-            <div class="mode-function__container">
-              <p>Функциональный режим</p>
-              <img src="/assets/mode_function.jpg" alt="mode-function" />
-              <p>
-                <b>FT</b> - Короткое нажатие включает ФУНКЦИОНАЛЬНЫЙ РЕЖИМ. Это
-                для счета по фреймам, звук вкл/выкл и тп.
-              </p>
-              <p>И справа, и слева будут гореть стрелки</p>
-              <p>
-                В этом режиме табло примет только одну команду, и вернется в
-                игровой режим
-              </p>
-              <h3>Команды:</h3>
-              <p>2 - добавить счет по фреймам слева</p>
-              <p>3 - добавить счет по фреймам справа</p>
-              <p>ST- вкл/выкл автоматического включения таймера удара</p>
-              <p>
-                Если вы случайно вошли в Функциональный режим, просто нажмите
-                ESC
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="network">
-          <h2>Сетевые функции</h2>
-        </section>
-        <section class="section" id="download">
-          <h2>Скачивание</h2>
-        </section>
-        <section class="section" id="examples">
-          <h2>Примеры использования</h2>
-        </section>
-      </main>
-      <footer class="footer">
-        <h6 class="contacts__title">Контакты</h6>
-        <div class="contacts">
-          <p>snooker@yandex.ru</p>
-          <p>@telegram</p>
-          <p>+7 999 999 99 99</p>
+          </p>
         </div>
-      </footer>
+      </div>
+      <div class="img__container">
+        <img src="assets/OBS.png" class="obs" alt="obs" />
+      </div>
+    </section>
+    <section class="section" id="connect">
+      <h2>Подключение</h2>
+      <div class="stepper__container">
+        <div class="circle">1</div>
+        <p>Найдите разъем питания с задней стороны</p>
+        <div class="vertical">
+          <div class="line"></div>
+        </div>
+        <div class="circle">2</div>
+        <p>
+          Вставьте в разъем штекер блока питания ( в комплекте ), а сам блок
+          питания включите в розетку 128-220 вольт
+        </p>
+        <div class="vertical">
+          <div class="line"></div>
+        </div>
+        <div class="circle">3</div>
+        <p>Табло включится и готово к работе</p>
+      </div>
+      <h3>Управляется с пульта</h3>
+    </section>
+    <section class="section" id="pult">
+      <h2>Пульт управления</h2>
+      <div class="pult__container">
+        <div class="pult__block">
+          <div class="pult__block__container">
+            <p>
+              Ваш пульт управления уже привязан именно к вашему табло и не
+              повлияет на работу других табло нашего производства
+            </p>
+            <img src="assets/pult1.jpg" alt="pult" />
+          </div>
+        </div>
+        <div class="pult__block">
+          <div class="pult__block__container">
+            <img src="assets/pult2.jpg" alt="pult" />
+            <p>
+              Однако, если вы потеряете пульт, или он придёт в негодность, вы
+              всегда можете написать нам в поддержку, и мы пришлем вам другой
+              пульт
+            </p>
+          </div>
+        </div>
+        <div class="pult__block">
+          <div class="pult__block__container">
+            <img src="assets/pult3.jpg" alt="pult" />
+            <p>Цифровые кнопки добавляют очки активному игроку</p>
+          </div>
+        </div>
+        <div class="pult__control">
+          <p><b>ESC</b> - Короткое - отменит последнюю команду.</p>
+          <p><b>Длинное</b> нажатие обнулит табло</p>
+          <p><b>ST</b> - включение таймера на удар</p>
+          <p><b>><< /b>- переход хода</p>
+          <p>
+            <b>FT - Длинное нажатие</b> переключает по кругу режимы табло (
+            классика, Шутаут, 900 )
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="mode">
+      <h2>Режим игры</h2>
+      <div class="mode">
+        <div>
+          <p>Классический снукер</p>
+          <img src="/assets/mode_snooker.jpg" alt="mode-snooker" />
+          <p>1- счет по фреймам</p>
+          <p>2- текущий брейк</p>
+          <p>3 - счет в партии</p>
+          <p>4 - таймер удара</p>
+        </div>
+        <div>
+          <p>Шут-Аут</p>
+          <img src="/assets/mode_shoot_out.jpg" alt="mode-shoot-out" />
+          <p>1- счет по фреймам</p>
+          <p>2- текущий брейк</p>
+          <p>3 - счет в партии</p>
+          <p>4 - таймер удара</p>
+        </div>
+        <div>
+          <p>Снукер-900</p>
+          <img src="/assets/mode_snooker_900.jpg" alt="mode-snooker-900" />
+          <p>1- счет по фреймам</p>
+          <p>2- текущий брейк</p>
+          <p>3 - счет в партии</p>
+          <p>4 - таймер удара</p>
+        </div>
+        <div class="mode-function__container">
+          <p>Функциональный режим</p>
+          <img src="/assets/mode_function.jpg" alt="mode-function" />
+          <p>
+            <b>FT</b> - Короткое нажатие включает ФУНКЦИОНАЛЬНЫЙ РЕЖИМ. Это
+            для счета по фреймам, звук вкл/выкл и тп.
+          </p>
+          <p>И справа, и слева будут гореть стрелки</p>
+          <p>
+            В этом режиме табло примет только одну команду, и вернется в
+            игровой режим
+          </p>
+          <h3>Команды:</h3>
+          <p>2 - добавить счет по фреймам слева</p>
+          <p>3 - добавить счет по фреймам справа</p>
+          <p>ST- вкл/выкл автоматического включения таймера удара</p>
+          <p>
+            Если вы случайно вошли в Функциональный режим, просто нажмите ESC
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="network">
+      <h2>Сетевые функции</h2>
+    </section>
+    <section class="section" id="download">
+      <h2>Скачивание</h2>
+    </section>
+    <section class="section" id="examples">
+      <h2>Примеры использования</h2>
+    </section>
+  </main>
+  <footer class="footer">
+    <h6 class="contacts__title">Контакты</h6>
+    <div class="contacts">
+      <p>snooker@yandex.ru</p>
+      <p>@telegram</p>
+      <p>+7 999 999 99 99</p>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

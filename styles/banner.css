@@ -1,0 +1,38 @@
+.banner__background {
+  background-color: #0078ff;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__features__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  max-width: 50%;
+}
+
+.banner__feature {
+  width: 50%;
+  min-width: 250px;
+}
+
+.banner__feature h3 {
+  text-align: left;
+  font-size: 32px;
+}
+
+.banner__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.banner__title h3 {
+  font-size: 36px;
+}
