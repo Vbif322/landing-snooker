@@ -6,6 +6,13 @@
 @import "styles/pult.css";
 @import "styles/mode.css";
 @import "styles/header.css";
+@import "styles/main.css";
+@import "styles/banner.css";
+@import "styles/carousel.css";
+
+:root {
+  --main-color: #0078ff;
+}
 
 * {
   margin: 0;
@@ -21,7 +28,7 @@ a {
 
 body {
   width: 100vw;
-  background-color: #f6f6f6;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -32,7 +39,7 @@ body {
 .wrapper {
   width: 100%;
   height: 100%;
-  padding: 24px 24px 8px 24px;
+  padding: 16px;
   max-width: 1440px;
   margin: auto;
 }
@@ -63,23 +70,7 @@ main {
 
 .section {
   width: 100%;
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 32px;
-}
-
-.img__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.panel {
-  width: 50%;
-}
-
-.pult {
-  width: 25%;
+  padding: 16px;
 }
 
 .card__container {
@@ -88,19 +79,6 @@ main {
   gap: 16px;
   justify-items: center;
   margin-top: 16px;
-}
-
-.card {
-  width: 100%;
-  height: 164px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
-  padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  cursor: default;
 }
 
 /* Оставил цвета, если захотите раскрасить карточки */
@@ -124,10 +102,10 @@ main {
   background: #ff8ad4;
 } */
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
-}
+} */
 
 .obs {
   width: 80%;

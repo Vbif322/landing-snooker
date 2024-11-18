@@ -1,0 +1,185 @@
+.plashka__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.plashka {
+  width: 40%;
+  height: 72px;
+  background-color: #eff1f4;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 16px;
+}
+
+.plashka__title {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.plashka__price {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.plashka__count {
+  background-color: #ffffff;
+  display: flex;
+  gap: 8px;
+  height: 80%;
+  width: 140px;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.plashka__buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.plashka__buttons div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 52px;
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  font-size: 20px;
+}
+
+.plashka__buttons div:nth-child(2) {
+  background: var(--main-color);
+  color: #eff1f4;
+}
+
+.plashka__buttons div img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: 628px;
+  width: calc(100vw - 30px);
+  padding: 32px 0;
+}
+
+.carousel__inner {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  height: 48px;
+  width: 48px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel__button:hover {
+  box-shadow: 0 2px 7px rgb(0 0 0 / 25%);
+}
+
+.carousel__button img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__prev {
+  left: 13%;
+}
+.carousel__next {
+  right: 13%;
+}
+
+.carousel__dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel__dot {
+  width: 36px;
+  height: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__dot.active {
+  background: var(--main-color);
+}
+
+.card {
+  min-width: 65%;
+  height: 564px;
+  background-size: cover;
+  background-image: url("/assets/card-bg.webp");
+  background-repeat: repeat-y;
+  background-position: center;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
+  padding: 40px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.carousel__text__container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+.carousel__img__container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__img__container img {
+  width: 100%;
+  border-radius: 32px;
+}
+
+.card__title {
+  font-size: 26px;
+}
+
+.carousel__text__block {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel__text__block img {
+  width: 72px;
+  height: 72px;
+}
+
+.card__text b {
+  font-size: 20px;
+}
