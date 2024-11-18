@@ -18,6 +18,14 @@
 .banner__feature {
   width: 50%;
   min-width: 250px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.banner__feature img {
+  height: 64px;
+  width: 64px;
 }
 
 .banner__feature h3 {
