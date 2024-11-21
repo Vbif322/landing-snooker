@@ -10,6 +10,11 @@
 @import "styles/banner.css";
 @import "styles/carousel.css";
 
+@font-face {
+  font-family: "Inter";
+  src: url("./font/Inter-VariableFont_opsz\,wght.ttf");
+}
+
 :root {
   --main-color: #0078ff;
 }
@@ -18,7 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "sofia", "Roboto", "Times New Roman", Times, serif;
+  font-family: "Inter", "Roboto", "Times New Roman", Times, serif;
 }
 
 a {

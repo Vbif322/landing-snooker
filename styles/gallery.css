@@ -1,16 +1,16 @@
 .gallery {
   display: flex;
-  gap: 16px;
+  gap: 5%;
   justify-content: center;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
   --border-radius: 16px;
+  position: relative;
 }
 
 .img {
-  min-width: 186px;
-  height: 186px;
+  width: 25%;
   border-radius: var(--border-radius);
   position: relative;
 }
@@ -25,7 +25,30 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 20%;
-  font-size: 24px;
+  top: 10%;
+  font-size: 32px;
   color: #fff;
+}
+
+.gallery__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+.gallery__button img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gallery__prev {
+  left: 4%;
+}
+.gallery__next {
+  right: 4%;
 }
