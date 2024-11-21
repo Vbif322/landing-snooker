@@ -9,6 +9,7 @@
 @import "styles/main.css";
 @import "styles/banner.css";
 @import "styles/carousel.css";
+@import "styles/delivery.css";
 
 @font-face {
   font-family: "Inter";
@@ -51,6 +52,10 @@ body {
 
 p {
   font-size: 20px;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,

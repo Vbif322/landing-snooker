@@ -46,7 +46,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 210px;
   height: 52px;
   border: 1px solid var(--main-color);
@@ -60,9 +59,8 @@
 }
 
 .plashka__buttons div img {
-  position: absolute;
-  left: 0;
   height: 100%;
+  margin-right: 16px;
 }
 
 .carousel {
