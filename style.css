@@ -10,6 +10,9 @@
 @import "styles/banner.css";
 @import "styles/carousel.css";
 @import "styles/delivery.css";
+@import "styles/features.css";
+@import "styles/stream.css";
+@import "styles/instructions.css";
 
 @font-face {
   font-family: "Inter";

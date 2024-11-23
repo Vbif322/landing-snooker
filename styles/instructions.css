@@ -1,0 +1,22 @@
+#instructions {
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 64px;
+  background-color: #fafafa;
+}
+
+.instructions__list {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.instructions__list div {
+  text-align: center;
+}
+
+.instructions__list img {
+  margin-top: 32px;
+  width: 128px;
+  height: 128px;
+}

@@ -74,6 +74,7 @@
   display: flex;
   justify-content: center;
   gap: 96px;
+  overflow-x: hidden;
 }
 
 .carousel__button {
@@ -166,10 +167,12 @@
 
 .card__title {
   font-size: 26px;
+  font-weight: 700;
 }
 
 .carousel__text__block {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 

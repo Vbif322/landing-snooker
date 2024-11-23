@@ -1,0 +1,71 @@
+#features {
+  padding: 0;
+}
+
+.features__container {
+  height: 885px;
+  padding: 54px 72px;
+  background-image: url(/assets/tablo_with_pult.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+}
+
+.features__container h2 {
+  font-size: 96px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+.features__colors__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.features__colors__container .color {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+}
+
+.features__colors__container .color:nth-child(1) {
+  background: #fff;
+}
+.features__colors__container .color:nth-child(3) {
+  border: 2px solid #8f8f8f;
+  background: #000;
+}
+.features__colors__container .color:nth-child(5) {
+  background: #67310f;
+}
+
+.features__list {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.features__list__element {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 608px;
+}
+
+.features__list__element div {
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  border-radius: 12px;
+}
+.features__list__element p {
+  color: #fff;
+  font-size: 24px;
+}
