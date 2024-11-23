@@ -60,3 +60,22 @@
   background-color: #ff0000;
   border-radius: 50%;
 }
+
+.banner-full-width {
+  background: #195223;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-full-width h3 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  width: 60%;
+}
+
+#banner1 {
+  display: block;
+}

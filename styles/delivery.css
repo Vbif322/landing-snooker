@@ -40,10 +40,6 @@
   justify-items: center;
 }
 
-.delivery__step img {
-  height: 120px;
-}
-
 .delivery__step {
   position: relative;
   display: flex;
@@ -55,6 +51,16 @@
   font-weight: 300;
   line-height: 28px;
   letter-spacing: -0.025em;
+}
+
+.delivery__step div {
+  height: 120px;
+  width: 120px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0f4d954d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .delivery__step:nth-child(2)::before {
@@ -77,18 +83,4 @@
   height: 33px;
   top: 60px;
   background: url("/assets/path2.png") no-repeat center;
-}
-
-.delivery__button__container {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.delivery__button {
-  height: 48px;
-  width: 178px;
-  background-color: #034da0;
-  border-radius: 32px;
-  color: #fff;
 }

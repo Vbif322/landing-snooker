@@ -161,6 +161,38 @@
   <h3>Управляется с пульта</h3>
 </section>
 <section class="section" id="pult">
+  <style>
+    .pult__block {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .pult__block:nth-child(even) {
+      align-items: flex-end;
+    }
+
+    .pult__block img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .pult__block img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .pult__block__container {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pult__control p {
+      margin: 8px 0;
+    }
+  </style>
   <h2>Пульт управления</h2>
   <div class="pult__container">
     <div class="pult__block">
@@ -255,3 +287,39 @@
 <section class="section" id="examples">
   <h2>Примеры использования</h2>
 </section>
+<div class="plashka__container">
+  <div class="plashka">
+    <p class="plashka__title">GC Power plus</p>
+    <p class="plashka__price">3 490 ₽</p>
+    <div class="plashka__count">
+      <img src="assets/zagluska.svg" />
+      <div>
+        <p>Купили</p>
+        <p>24 000</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Гуру многозадачности</h2>
+  </div>
+  <div class="plashka__buttons">
+    <div>
+      <img src="assets/zagluska.svg" />
+      <p>Видеообзор</p>
+    </div>
+    <div>
+      <img src="assets/zagluska.svg" />
+      <p>В корзину</p>
+    </div>
+    <div>
+      <img src="assets/zagluska.svg" />
+      <p>Фото товара</p>
+    </div>
+  </div>
+</div>
+<div class="delivery__title__container">
+  <div class="delivery__title">
+    <p>Комплектация</p>
+    <img src="assets/chevron_right.svg" />
+  </div>
+</div>
