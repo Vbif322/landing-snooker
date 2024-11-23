@@ -10,6 +10,7 @@
 @import "styles/banner.css";
 @import "styles/carousel.css";
 @import "styles/delivery.css";
+@import "styles/features.css";
 
 @font-face {
   font-family: "Inter";
@@ -120,6 +121,12 @@ main {
 .obs {
   width: 80%;
   margin-top: 16px;
+}
+
+.banner-full-width {
+  background: #195223;
+  text-align: center;
+  color: #fff;
 }
 
 @media (max-width: 600px) {

@@ -46,3 +46,17 @@
   font-weight: bold;
   margin-bottom: 16px;
 }
+
+.banner__circle__container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.banner__circle {
+  width: 32px;
+  height: 32px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
