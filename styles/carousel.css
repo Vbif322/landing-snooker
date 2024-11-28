@@ -68,25 +68,31 @@
   height: 628px;
   width: calc(100vw - 30px);
   padding: 32px 0;
+  overflow: hidden;
 }
 
 .carousel__inner {
   display: flex;
   justify-content: center;
   gap: 96px;
-  overflow-x: hidden;
+  transition: transform 0.5s;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
 }
 
 .carousel__button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateZ(0);
   background-color: #ffffff;
   height: 48px;
   width: 48px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .carousel__button:hover {
