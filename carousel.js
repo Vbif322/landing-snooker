@@ -1,95 +1,95 @@
-// Обработчик прокрутки слайдов карусели
+class Carousel {
+  constructor(setting) {
+    let privates = {};
 
-// let activeSlideIndex = 0;
+    /* Начальные параметры */
+    privates.setting = setting;
 
-// const carousel = document.querySelector(".carousel__inner");
-// const prevButton = document.querySelector(".carousel__prev");
-// const nextButton = document.querySelector(".carousel__next");
+    privates.sel = {
+      main: document.querySelector(privates.setting.main),
+      wrap: document.querySelector(privates.setting.wrap),
+      children: document.querySelector(privates.setting.wrap).children,
+      prev: document.querySelector(privates.setting.prev),
+      next: document.querySelector(privates.setting.next),
+      dots: document.querySelectorAll(privates.setting.dots),
+    };
 
-// const slides = carousel.querySelectorAll(".card");
+    privates.opt = {
+      position: 1,
+      max_position: document.querySelector(privates.setting.wrap).children
+        .length,
+    };
 
-// const slideButtons = document.querySelectorAll(".carousel__dot");
+    privates.sel.dots[privates.opt.position].classList.add("active");
 
-// const goToSlide = (i) => {
-//   carousel.style.transform = `translateX(-${i * 100}%)`;
-//   activeSlideIndex = i;
-// };
-
-// prevButton.addEventListener("click", () => {
-//   if (activeSlideIndex === 0) {
-//     goToSlide(slideButtons.length - 1);
-//   } else {
-//     goToSlide(activeSlideIndex - 1);
-//   }
-// });
-
-// nextButton.addEventListener("click", () => {
-//   if (activeSlideIndex === slideButtons.length) {
-//     goToSlide(0);
-//   } else {
-//     goToSlide(activeSlideIndex + 1);
-//   }
-// });
-
-function Carousel(setting) {
-  /* Scope privates methods and properties */
-  let privates = {};
-
-  /* Privates properties */
-  privates.setting = setting;
-
-  privates.sel = {
-    main: document.querySelector(privates.setting.main),
-    wrap: document.querySelector(privates.setting.wrap),
-    children: document.querySelector(privates.setting.wrap).children,
-    prev: document.querySelector(privates.setting.prev),
-    next: document.querySelector(privates.setting.next),
-  };
-
-  privates.opt = {
-    position: 0,
-    max_position: document.querySelector(privates.setting.wrap).children.length,
-  };
-
-  // Control
-  if (privates.sel.prev !== null) {
-    privates.sel.prev.addEventListener("click", () => {
-      this.prev_slide();
-    });
-  }
-
-  if (privates.sel.next !== null) {
-    privates.sel.next.addEventListener("click", () => {
-      this.next_slide();
-    });
-  }
-
-  // Prev slide
-  this.prev_slide = () => {
-    --privates.opt.position;
-
-    if (privates.opt.position < 0) {
-      privates.sel.wrap.classList.add("s-notransition");
-      privates.opt.position = privates.opt.max_position - 1;
+    // Управление
+    if (privates.sel.prev !== null) {
+      privates.sel.prev.addEventListener("click", () => {
+        this.prev_slide();
+      });
     }
 
-    privates.sel.wrap.style[
-      "transform"
-    ] = `translateX(-${privates.opt.position}00%)`;
-  };
-
-  // Next slide
-  this.next_slide = () => {
-    ++privates.opt.position;
-
-    if (privates.opt.position >= privates.opt.max_position) {
-      privates.opt.position = 0;
+    if (privates.sel.next !== null) {
+      privates.sel.next.addEventListener("click", () => {
+        this.next_slide();
+      });
     }
 
-    privates.sel.wrap.style[
-      "transform"
-    ] = `translateX(-${privates.opt.position}00%)`;
-  };
+    if (privates.sel.dots !== null) {
+      for (let i = 0; i < privates.sel.dots.length; i++) {
+        privates.sel.dots[i].addEventListener("click", () => {
+          privates.sel.dots[privates.opt.position].classList.remove("active");
+          privates.sel.dots[i].classList.add("active");
+          privates.opt.position = i;
+          privates.sel.wrap.style["transform"] = `translateX(${-(
+            i * 72 -
+            72
+          )}%)`;
+        });
+      }
+    }
+
+    // Предыдущий слайд
+    this.prev_slide = () => {
+      privates.sel.dots[privates.opt.position].classList.remove("active");
+      if (privates.opt.position <= 0) {
+        privates.sel.dots[privates.opt.max_position - 1].classList.add(
+          "active"
+        );
+      } else {
+        privates.sel.dots[privates.opt.position - 1].classList.add("active");
+      }
+      --privates.opt.position;
+
+      if (privates.opt.position < 0) {
+        privates.opt.position = privates.opt.max_position - 1;
+      }
+      privates.sel.wrap.style["transform"] = `translateX(${-(
+        privates.opt.position * 72 -
+        72
+      )}%)`;
+    };
+
+    // Следущий слайд
+    this.next_slide = () => {
+      privates.sel.dots[privates.opt.position].classList.remove("active");
+      if (privates.opt.position >= privates.opt.max_position - 1) {
+        privates.sel.dots[0].classList.add("active");
+      } else {
+        privates.sel.dots[privates.opt.position + 1].classList.add("active");
+      }
+      ++privates.opt.position;
+
+      if (privates.opt.position >= privates.opt.max_position) {
+        privates.opt.position = 0;
+      }
+
+      privates.sel.wrap.style["transform"] = `translateX(${-(
+        privates.opt.position * 72 -
+        72
+      )}%)`;
+    };
+  }
 }
 
 new Carousel({
@@ -97,4 +97,5 @@ new Carousel({
   wrap: ".carousel__inner",
   prev: ".carousel__prev",
   next: ".carousel__next",
+  dots: ".carousel__dot",
 });
