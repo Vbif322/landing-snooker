@@ -4,6 +4,7 @@
 
 .features__container {
   height: 885px;
+  min-width: 100vw;
   padding: 54px 72px;
   background-image: url(/assets/tablo_with_pult.jpg);
   background-repeat: no-repeat;

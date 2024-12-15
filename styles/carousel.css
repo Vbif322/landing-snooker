@@ -63,18 +63,19 @@
   margin-right: 16px;
 }
 
+#carousel {
+  padding: 0;
+}
+
 .carousel {
   position: relative;
-  height: 628px;
-  width: calc(100vw - 30px);
+  width: 100%;
   padding: 32px 0;
   overflow: hidden;
 }
 
 .carousel__inner {
   display: flex;
-  justify-content: center;
-  gap: 96px;
   transition: transform 0.5s;
   will-change: transform;
   position: relative;
@@ -107,10 +108,10 @@
 }
 
 .carousel__prev {
-  left: 13%;
+  left: 10px;
 }
 .carousel__next {
-  right: 13%;
+  right: 10px;
 }
 
 .carousel__dots {
@@ -133,8 +134,14 @@
   background: var(--main-color);
 }
 
+.card__wrapper {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  min-width: 65%;
+  width: 65%;
   height: 564px;
   background-size: cover;
   background-image: url("/assets/card-bg.webp");
