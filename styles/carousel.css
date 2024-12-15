@@ -121,6 +121,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
+  z-index: 3;
 }
 
 .carousel__dot {

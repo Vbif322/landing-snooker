@@ -111,8 +111,9 @@ new Carousel({
 
 new Carousel({
   id: "stream",
-  main: ".carousel",
-  wrap: ".carousel__inner",
-  prev: ".carousel__prev",
-  next: ".carousel__next",
+  main: ".stream__carousel",
+  wrap: ".stream__carousel__inner",
+  prev: ".stream__chevron-left",
+  next: ".stream__chevron-right",
+  dots: ".carousel__dot",
 });

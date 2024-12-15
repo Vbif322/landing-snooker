@@ -18,12 +18,28 @@
   max-width: 336px;
 }
 
-.stream__comment {
+.stream__carousel {
   position: absolute;
   top: 248px;
   right: 84px;
-  padding: 8px 16px;
+  overflow: hidden;
+  height: 140px;
   width: 500px;
+}
+
+.stream__carousel__inner {
+  display: flex;
+  transition: transform 0.5s;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+}
+
+.stream__comment {
+  position: relative;
+  padding: 8px 16px;
+  min-width: 500px;
+  height: 140px;
   background-color: rgb(255 255 255 / 50%);
   box-shadow: 0px 0px 16px #00000029;
   border-radius: 8px;
@@ -87,6 +103,7 @@
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
+  z-index: 3;
 }
 
 .stream__chevron-left {
