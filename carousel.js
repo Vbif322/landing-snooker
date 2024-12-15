@@ -5,22 +5,26 @@ class Carousel {
     /* Начальные параметры */
     privates.setting = setting;
 
+    const carousel = document.getElementById(privates.setting.id);
+
     privates.sel = {
-      main: document.querySelector(privates.setting.main),
-      wrap: document.querySelector(privates.setting.wrap),
-      children: document.querySelector(privates.setting.wrap).children,
-      prev: document.querySelector(privates.setting.prev),
-      next: document.querySelector(privates.setting.next),
-      dots: document.querySelectorAll(privates.setting.dots),
+      main: carousel.querySelector(privates.setting.main),
+      wrap: carousel.querySelector(privates.setting.wrap),
+      children: carousel.querySelector(privates.setting.wrap).children,
+      prev: carousel.querySelector(privates.setting.prev),
+      next: carousel.querySelector(privates.setting.next),
+      dots: carousel.querySelectorAll(privates.setting.dots),
     };
 
     privates.opt = {
-      position: 1,
+      position: 0,
       max_position: document.querySelector(privates.setting.wrap).children
         .length,
     };
 
-    privates.sel.dots[privates.opt.position].classList.add("active");
+    if (privates.sel.dots.length) {
+      privates.sel.dots[privates.opt.position].classList.add("active");
+    }
 
     // Управление
     if (privates.sel.prev !== null) {
@@ -35,16 +39,13 @@ class Carousel {
       });
     }
 
-    if (privates.sel.dots !== null) {
+    if (privates.sel.dots && privates.sel.dots !== null) {
       for (let i = 0; i < privates.sel.dots.length; i++) {
         privates.sel.dots[i].addEventListener("click", () => {
           privates.sel.dots[privates.opt.position].classList.remove("active");
           privates.sel.dots[i].classList.add("active");
           privates.opt.position = i;
-          privates.sel.wrap.style["transform"] = `translateX(${-(
-            i * 72 -
-            72
-          )}%)`;
+          privates.sel.wrap.style["transform"] = `translateX(${-(i * 100)}%)`;
         });
       }
     }
@@ -65,8 +66,7 @@ class Carousel {
         privates.opt.position = privates.opt.max_position - 1;
       }
       privates.sel.wrap.style["transform"] = `translateX(${-(
-        privates.opt.position * 72 -
-        72
+        privates.opt.position * 100
       )}%)`;
     };
 
@@ -85,17 +85,35 @@ class Carousel {
       }
 
       privates.sel.wrap.style["transform"] = `translateX(${-(
-        privates.opt.position * 72 -
-        72
+        privates.opt.position * 100
       )}%)`;
     };
   }
 }
 
 new Carousel({
+  id: "carousel",
   main: ".carousel",
   wrap: ".carousel__inner",
   prev: ".carousel__prev",
   next: ".carousel__next",
+  dots: ".carousel__dot",
+});
+
+new Carousel({
+  id: "features",
+  main: ".carousel",
+  wrap: ".carousel__inner",
+  prev: ".carousel__prev",
+  next: ".carousel__next",
+  dots: ".carousel__dot",
+});
+
+new Carousel({
+  id: "stream",
+  main: ".stream__carousel",
+  wrap: ".stream__carousel__inner",
+  prev: ".stream__chevron-left",
+  next: ".stream__chevron-right",
   dots: ".carousel__dot",
 });
