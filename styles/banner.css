@@ -52,11 +52,13 @@
   display: flex;
   justify-content: center;
   gap: 24px;
+  overflow: hidden;
 }
 
 .banner__circle {
   width: 32px;
   height: 32px;
+  min-width: 32px;
   background-color: #ff0000;
   border-radius: 50%;
 }
@@ -71,11 +73,18 @@
 
 .banner-full-width h3 {
   margin: 0;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   width: 60%;
 }
 
 #banner1 {
   display: block;
+}
+
+@media (max-width: 576px) {
+  .banner-full-width h3 {
+    font-size: 18px;
+    width: 90%;
+  }
 }

@@ -9,10 +9,12 @@
   margin-top: 24px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .instructions__list div {
   text-align: center;
+  cursor: pointer;
 }
 
 .instructions__list img {
@@ -31,12 +33,12 @@
 .main__instruction h3 {
   margin-top: 64px;
   text-align: left;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .instruction__title {
-  font-size: 48px;
+  font-size: 3rem;
   margin-top: 64px;
   max-width: 800px;
 }
@@ -53,7 +55,7 @@
 
 .instruction__info {
   max-width: 800px;
-  font-size: 36px;
+  font-size: 2rem;
   margin-top: 16px;
 }
 
@@ -62,7 +64,32 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.instruction__image__container img {
+  max-width: 80vw;
+}
 
 .instruction__image__container img {
   margin-top: 64px;
+}
+
+@media (max-width: 576px) {
+  .main__instruction {
+    margin-left: 16px;
+    padding: 4px;
+  }
+
+  .instruction__title:before {
+    display: none;
+  }
+
+  .main__instruction h3 {
+    font-size: 2rem;
+  }
+
+  .instruction__title {
+    font-size: 1.75rem;
+  }
+  .instruction__info {
+    font-size: 1rem;
+  }
 }
