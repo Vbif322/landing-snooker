@@ -14,6 +14,7 @@ class Carousel {
       prev: carousel.querySelector(privates.setting.prev),
       next: carousel.querySelector(privates.setting.next),
       dots: carousel.querySelectorAll(privates.setting.dots),
+      control: carousel.querySelectorAll(privates.setting.control),
     };
 
     privates.opt = {
@@ -46,6 +47,20 @@ class Carousel {
           privates.sel.dots[i].classList.add("active");
           privates.opt.position = i;
           privates.sel.wrap.style["transform"] = `translateX(${-(i * 100)}%)`;
+        });
+      }
+    }
+
+    if (privates.sel.control && privates.sel.control !== null) {
+      for (let i = 0; i < privates.sel.control.length; i++) {
+        privates.sel.control[i].addEventListener("click", () => {
+          const slide = Number(privates.sel.control[i].dataset.slide);
+          privates.sel.dots[privates.opt.position].classList.remove("active");
+          privates.sel.dots[slide].classList.add("active");
+          privates.opt.position = slide;
+          privates.sel.wrap.style["transform"] = `translateX(${-(
+            Number(privates.sel.control[i].dataset.slide) * 100
+          )}%)`;
         });
       }
     }
@@ -107,6 +122,7 @@ new Carousel({
   prev: ".carousel__prev",
   next: ".carousel__next",
   dots: ".carousel__dot",
+  control: ".color",
 });
 
 new Carousel({

@@ -14,7 +14,7 @@
 }
 
 .features__container h2 {
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 700;
   color: #fff;
   text-align: left;
@@ -29,6 +29,7 @@
 .features__colors__container .color {
   width: 42px;
   height: 42px;
+  min-width: 42px;
   border-radius: 50%;
   border: 2px solid #eeeeee;
 }
@@ -68,5 +69,29 @@
 }
 .features__list__element p {
   color: #fff;
-  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .features__container {
+    padding: 16px;
+  }
+
+  .features__container h2 {
+    font-size: 2rem;
+  }
+
+  .features__list__element p {
+    font-size: 1rem;
+  }
+
+  .features__list {
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  .features__colors__container .color {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
 }

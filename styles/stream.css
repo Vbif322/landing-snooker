@@ -11,7 +11,7 @@
 .stream__title {
   position: absolute;
   top: 84px;
-  right: 84px;
+  right: 8%;
   text-align: right;
   font-size: 44px;
   font-weight: 600px;
@@ -21,7 +21,7 @@
 .stream__carousel {
   position: absolute;
   top: 248px;
-  right: 84px;
+  right: 8%;
   overflow: hidden;
   height: 140px;
   width: 500px;
@@ -94,7 +94,7 @@
   gap: 56px;
   position: absolute;
   bottom: 172px;
-  right: 84px;
+  right: 8%;
 }
 
 .stream__chevron {
@@ -111,4 +111,10 @@
 }
 .stream__chevron-right {
   right: 0;
+}
+
+@media (max-width: 576px) {
+  .stream__carousel {
+    display: none;
+  }
 }
