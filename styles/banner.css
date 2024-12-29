@@ -87,4 +87,10 @@
     font-size: 18px;
     width: 90%;
   }
+
+  .banner__circle__container {
+    width: 254px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
